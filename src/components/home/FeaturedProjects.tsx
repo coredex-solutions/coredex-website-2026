@@ -54,7 +54,7 @@ export default function FeaturedProjects({ locale, dict }: FeaturedProjectsProps
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 z-10 flex flex-col gap-8 md:gap-0">
         {mockProjects.map((project, index) => {
           // eslint-disable-next-line react-hooks/rules-of-hooks
-          const y = useTransform(scrollYProgress, [0, 1], [0, window.innerHeight * project.speed]);
+          const y = useTransform(scrollYProgress, [0, 1], [0, typeof window !== "undefined" ? window.innerHeight * project.speed : 1000 * project.speed]);
           const isEven = index % 2 === 0;
 
           return (
