@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "home": {
+      "title": "Coredex Solutions — Leading Digital Agency in Lebanon",
+      "description": "Coredex Solutions is the top digital agency in Lebanon and the Middle East. We deliver exceptional web development, social media marketing, video editing, photography, and SEO services."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about Coredex Solutions — our mission, vision, values, and the team behind Lebanon's leading digital agency."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Explore our full range of digital services: web development, social media marketing, video editing, photography, and SEO optimization."
+    },
+    "projects": {
+      "title": "Our Projects",
+      "description": "Browse our portfolio of successful digital projects across web development, branding, marketing, and more."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with Coredex Solutions. Let's discuss your next digital project and create something extraordinary."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Read the Coredex Solutions privacy policy to understand how we collect, use, and protect your personal data."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Review the Coredex Solutions terms of service governing the use of our website and digital services."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "Learn about how Coredex Solutions uses cookies and similar technologies on our website."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "tagline": "Digital Solutions Agency",
+    "title": "We Build",
+    "titleHighlight": "Digital Futures",
+    "subtitle": "Transforming brands across Lebanon and the Middle East with cutting-edge web development, strategic marketing, and creative storytelling.",
+    "cta": "Start Your Project",
+    "ctaSecondary": "View Our Work"
+  },
+  "services": {
+    "sectionTag": "What We Do",
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "We deliver end-to-end digital solutions that drive growth and transform brands.",
+    "webDev": {
+      "title": "Web Development",
+      "description": "Custom websites and web applications built with the latest technologies. From landing pages to complex platforms, we create digital experiences that convert.",
+      "features": ["Custom Web Apps", "E-Commerce", "CMS Development", "API Integration", "Performance Optimization"]
+    },
+    "socialMedia": {
+      "title": "Social Media Marketing",
+      "description": "Strategic social media campaigns that build communities and drive engagement. We craft content that resonates with your audience across all platforms.",
+      "features": ["Content Strategy", "Community Management", "Paid Advertising", "Analytics & Reporting", "Influencer Marketing"]
+    },
+    "videoEditing": {
+      "title": "Video Editing",
+      "description": "Professional video production and editing that tells your brand's story. From corporate videos to social media content, we bring your vision to life.",
+      "features": ["Brand Videos", "Social Media Reels", "Motion Graphics", "Color Grading", "Sound Design"]
+    },
+    "photography": {
+      "title": "Photography",
+      "description": "High-quality photography that captures the essence of your brand. Professional shoots for products, events, portraits, and corporate needs.",
+      "features": ["Product Photography", "Event Coverage", "Corporate Portraits", "Lifestyle Shoots", "Photo Retouching"]
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "Data-driven SEO strategies that put you on top of search results. We optimize every aspect of your digital presence for maximum visibility.",
+      "features": ["Technical SEO", "Content Optimization", "Link Building", "Local SEO", "SEO Audits"]
+    },
+    "learnMore": "Learn More",
+    "processTag": "How We Work",
+    "processTitle": "Our Process",
+    "process": {
+      "discovery": { "title": "Discovery", "description": "We learn about your brand, goals, audience, and competition to build a solid foundation." },
+      "strategy": { "title": "Strategy", "description": "We craft a tailored plan with clear milestones, KPIs, and creative direction." },
+      "execution": { "title": "Execution", "description": "Our team brings the strategy to life with precision, creativity, and technical excellence." },
+      "results": { "title": "Results", "description": "We measure, optimize, and deliver measurable outcomes that drive real business growth." }
+    }
+  },
+  "stats": {
+    "projects": "Projects Delivered",
+    "clients": "Happy Clients",
+    "years": "Years of Experience",
+    "countries": "Countries Served"
+  },
+  "featuredProjects": {
+    "sectionTag": "Our Work",
+    "sectionTitle": "Featured Projects",
+    "sectionSubtitle": "A selection of our most impactful digital projects.",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project"
+  },
+  "whyUs": {
+    "sectionTag": "Why Coredex",
+    "sectionTitle": "Why Choose Us",
+    "sectionSubtitle": "We don't just deliver projects — we build partnerships that drive lasting success.",
+    "reasons": [
+      { "title": "Expert Team", "description": "A diverse team of specialists across development, design, marketing, and creative production." },
+      { "title": "Results-Driven", "description": "Every strategy is backed by data and focused on measurable business outcomes." },
+      { "title": "Cutting-Edge Tech", "description": "We use the latest tools and frameworks to build future-proof digital solutions." },
+      { "title": "Regional Expertise", "description": "Deep understanding of the Lebanese and Middle Eastern market dynamics." }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "Testimonials",
+    "sectionTitle": "What Our Clients Say",
+    "items": [
+      { "name": "Ahmad Khoury", "role": "CEO, TechVentures", "text": "Coredex Solutions transformed our entire digital presence. Their web development team delivered a platform that exceeded all expectations." },
+      { "name": "Sarah Haddad", "role": "Marketing Director, Bloom", "text": "Their social media strategy doubled our engagement in just three months. The team truly understands the regional market." },
+      { "name": "Omar Mansour", "role": "Founder, Elevate Media", "text": "The video content they produced for our brand launch was absolutely stunning. Professional, creative, and delivered on time." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Build Something Extraordinary?",
+    "subtitle": "Let's transform your digital presence and take your brand to the next level.",
+    "button": "Start Your Project"
+  },
+  "about": {
+    "heroTag": "About Us",
+    "heroTitle": "We Are Coredex Solutions",
+    "heroSubtitle": "A team of digital experts passionate about building the future of brands across Lebanon and the Middle East.",
+    "storyTag": "Our Story",
+    "storyTitle": "From Vision to Reality",
+    "storyText": "Coredex Solutions was founded with a clear mission: to bridge the gap between Middle Eastern businesses and world-class digital solutions. Starting from Beirut, we've grown into a full-service digital agency that serves clients across the region and beyond. Our journey is driven by innovation, creativity, and an unwavering commitment to excellence.",
+    "missionTitle": "Our Mission",
+    "missionText": "To empower businesses across Lebanon and the Middle East with innovative digital solutions that drive growth, build trust, and create lasting impact.",
+    "visionTitle": "Our Vision",
+    "visionText": "To be the most trusted and innovative digital agency in the Middle East, setting new standards for excellence in every project we deliver.",
+    "valuesTag": "Our Values",
+    "valuesTitle": "What Drives Us",
+    "values": [
+      { "title": "Innovation", "description": "We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions." },
+      { "title": "Excellence", "description": "We hold ourselves to the highest standards in every project, no matter the scale." },
+      { "title": "Integrity", "description": "We build relationships on trust, transparency, and honest communication." },
+      { "title": "Collaboration", "description": "We work as partners with our clients, not just service providers." },
+      { "title": "Impact", "description": "We measure our success by the real business results we deliver for our clients." },
+      { "title": "Adaptability", "description": "We stay agile and responsive to the ever-changing digital landscape." }
+    ]
+  },
+  "contact": {
+    "heroTag": "Get In Touch",
+    "heroTitle": "Let's Create Something Extraordinary",
+    "heroSubtitle": "Have a project in mind? We'd love to hear about it. Reach out and let's start building.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name",
+      "service": "Service Interested In",
+      "serviceOptions": {
+        "webDev": "Web Development",
+        "socialMedia": "Social Media Marketing",
+        "videoEditing": "Video Editing",
+        "photography": "Photography",
+        "seo": "SEO",
+        "other": "Other"
+      },
+      "message": "Tell us about your project",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Beirut, Lebanon",
+      "email": "hello@coredexsolutions.com",
+      "phone": "+961 XX XXX XXX"
+    },
+    "social": {
+      "title": "Follow Us"
+    }
+  },
+  "projects": {
+    "heroTag": "Our Portfolio",
+    "heroTitle": "Our Projects",
+    "heroSubtitle": "Explore the work that defines us — from web platforms to creative campaigns.",
+    "filterAll": "All",
+    "filterWebDev": "Web Development",
+    "filterSocialMedia": "Social Media",
+    "filterVideoEditing": "Video Editing",
+    "filterPhotography": "Photography",
+    "filterSeo": "SEO",
+    "noProjects": "No projects found in this category."
+  },
+  "footer": {
+    "description": "Coredex Solutions is a leading digital agency in Lebanon, delivering world-class web development, marketing, and creative services.",
+    "company": "Company",
+    "servicesTitle": "Services",
+    "legal": "Legal",
+    "contactTitle": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  }
+}
