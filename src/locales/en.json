@@ -89,6 +89,8 @@
     }
   },
   "stats": {
+    "sectionTag": "The Data Nexus",
+    "sectionTitle": "Impact By The Numbers",
     "projects": "Projects Delivered",
     "clients": "Happy Clients",
     "years": "Years of Experience",
@@ -99,7 +101,8 @@
     "sectionTitle": "Featured Projects",
     "sectionSubtitle": "A selection of our most impactful digital projects.",
     "viewAll": "View All Projects",
-    "viewProject": "View Project"
+    "viewProject": "View Project",
+    "viewAllWork": "View All Work"
   },
   "whyUs": {
     "sectionTag": "Why Coredex",
@@ -113,7 +116,7 @@
     ]
   },
   "testimonials": {
-    "sectionTag": "Testimonials",
+    "sectionTag": "The Constellation",
     "sectionTitle": "What Our Clients Say",
     "items": [
       { "name": "Ahmad Khoury", "role": "CEO, TechVentures", "text": "Coredex Solutions transformed our entire digital presence. Their web development team delivered a platform that exceeded all expectations." },
@@ -122,6 +125,7 @@
     ]
   },
   "cta": {
+    "sectionTag": "The Event Horizon",
     "title": "Ready to Build Something Extraordinary?",
     "subtitle": "Let's transform your digital presence and take your brand to the next level.",
     "button": "Start Your Project"

@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class", "[data-theme=\"dark\"]"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,35 +10,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#802cf5",
-          light: "#9d5cf7",
-          dark: "#6a1fd4",
-        },
-        secondary: {
-          DEFAULT: "#3d5ae3",
-          light: "#5a75f0",
-          dark: "#2e45b8",
-        },
-        accent: {
-          DEFAULT: "#40b4db",
-          light: "#6bc9e8",
-          dark: "#2a97bf",
-        },
-        bg: "#FAFBFF",
-        surface: {
-          DEFAULT: "#FFFFFF",
-          elevated: "#F4F5FB",
-        },
+        bg: "var(--bg)",
+        surface: "var(--surface)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
         text: {
-          DEFAULT: "#0A0F1E",
-          muted: "#6B7394",
-          light: "#9BA3C2",
+          DEFAULT: "var(--text)",
+          secondary: "var(--text-secondary)",
         },
-        border: {
-          DEFAULT: "#E2E5F1",
-          light: "#F0F1F7",
-        }
+        border: "var(--border)",
       },
       animation: {
         float: "float 6s ease-in-out infinite",

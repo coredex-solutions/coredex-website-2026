@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, Cairo } from "next/font/google";
+import { Montserrat, Cairo } from "next/font/google";
 import "./globals.css";
 import { websiteJsonLd } from "@/lib/seo";
 
-const spaceGrotesk = Space_Grotesk({
+const montserratHeading = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-heading",
   display: "swap",
 });
 
-const inter = Inter({
+const montserratBody = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-body",
   display: "swap",
 });
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
 
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import CustomCursor from "@/components/ui/CustomCursor";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 export default function RootLayout({
   children,
@@ -50,12 +51,14 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${cairo.variable} antialiased`}
+        className={`${montserratHeading.variable} ${montserratBody.variable} ${cairo.variable} antialiased`}
       >
-        <CustomCursor />
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+        <ThemeProvider>
+          <CustomCursor />
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
+        </ThemeProvider>
       </body>
     </html>
   );

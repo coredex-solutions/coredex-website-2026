@@ -4,10 +4,40 @@
 
 @layer base {
   :root {
-    --font-heading: 'Space Grotesk', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
     --font-arabic: 'Cairo', sans-serif;
+
+    /* Dark Mode (Absolute Default) */
+    --bg: #0F1117;
+    --surface: #1A1F2E;
+    --primary: #5A3CF0;
+    --secondary: #4263EB;
+    --text: #FFFFFF;
+    --text-secondary: #B8C0E0;
+    --border: #2B3247;
   }
+}
+
+:root[data-theme="light"], .light {
+  /* Light Mode (Negative) */
+  --bg: #FFFFFF;
+  --surface: #F7F8FC;
+  --primary: #5A3CF0;
+  --secondary: #4263EB;
+  --text: #1B2340;
+  --text-secondary: #5C6784;
+  --border: #E3E7F3;
+}
+
+.force-dark {
+  --bg: #0F1117;
+  --surface: #1A1F2E;
+  --primary: #5A3CF0;
+  --secondary: #4263EB;
+  --text: #FFFFFF;
+  --text-secondary: #B8C0E0;
+  --border: #2B3247;
 }
 
 /* ─── Base Styles ─── */
@@ -18,37 +48,43 @@
 }
 
 html {
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Arabic font override */
-html[lang="ar"] body,
-html[dir="rtl"] body {
+[dir="rtl"] {
   font-family: var(--font-arabic);
 }
 
-html[lang="ar"] h1,
-html[lang="ar"] h2,
-html[lang="ar"] h3,
-html[lang="ar"] h4,
-html[lang="ar"] h5,
-html[lang="ar"] h6 {
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
   font-family: var(--font-arabic);
+  letter-spacing: 0 !important;
+}
+
+/* Override Space Grotesk in Arabic */
+[dir="rtl"] [class*="font-[family-name:var(--font-heading)]"] {
+  font-family: var(--font-arabic) !important;
+  letter-spacing: 0 !important;
 }
 
 /* ─── Utility Classes ─── */
 .gradient-text {
-  background: linear-gradient(135deg, #802cf5, #3d5ae3, #40b4db);
+  background: linear-gradient(90deg, var(--primary) 0%, #4E4FF0 45%, var(--secondary) 100%);
   background-size: 200% 200%;
   animation: gradient-shift 4s ease infinite;
   -webkit-background-clip: text;
@@ -57,46 +93,46 @@ html[lang="ar"] h6 {
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #802cf5, #3d5ae3, #40b4db);
+  background: linear-gradient(90deg, var(--primary) 0%, #4E4FF0 45%, var(--secondary) 100%);
   background-size: 200% 200%;
   animation: gradient-shift 8s ease infinite;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(var(--surface-rgb, 26, 31, 46), 0.65);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border);
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(var(--surface-rgb, 26, 31, 46), 0.85);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(var(--surface-rgb, 26, 31, 46), 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(226, 229, 241, 0.5);
+  border: 1px solid var(--border);
   border-radius: 20px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.85);
-  border-color: rgba(128, 44, 245, 0.2);
+  background: rgba(var(--surface-rgb, 26, 31, 46), 0.85);
+  border-color: var(--primary);
   box-shadow:
-    0 20px 60px rgba(128, 44, 245, 0.08),
-    0 0 0 1px rgba(128, 44, 245, 0.05);
+    0 20px 60px rgba(90, 60, 240, 0.15),
+    0 0 0 1px rgba(90, 60, 240, 0.1);
   transform: translateY(-4px);
 }
 
 .gradient-border {
   position: relative;
-  background: var(--color-surface);
+  background: var(--surface);
   border-radius: 20px;
 }
 
@@ -106,7 +142,7 @@ html[lang="ar"] h6 {
   inset: -1px;
   border-radius: 21px;
   padding: 1px;
-  background: linear-gradient(135deg, #802cf5, #3d5ae3, #40b4db);
+  background: linear-gradient(90deg, var(--primary) 0%, #4E4FF0 45%, var(--secondary) 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -142,7 +178,7 @@ html[lang="ar"] h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-bg);
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
